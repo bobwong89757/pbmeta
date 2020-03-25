@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	pbcompiler "github.com/gogo/protobuf/protoc-gen-gogo/plugin"
 	"io/ioutil"
 	"os"
 
-	pbcompiler "github.com/bobwong89757/pbmeta/proto/compiler"
 	"github.com/golang/protobuf/proto"
 )
 
