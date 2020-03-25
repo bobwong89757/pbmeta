@@ -1,7 +1,7 @@
 package pbmeta
 
 import (
-	"github.com/davyxu/golexer"
+	"github.com/bobwong89757/golexer"
 )
 
 // 自定义的token id

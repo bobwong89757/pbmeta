@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	pbcompiler "github.com/davyxu/pbmeta/proto/compiler"
+	pbcompiler "github.com/bobwong89757/pbmeta/proto/compiler"
 	"github.com/golang/protobuf/proto"
 )
 

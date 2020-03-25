@@ -39,7 +39,7 @@ go install https://github.com/golang/protobuf/protoc-gen-go
 确保本项目与上面两个项目在同一个GOPATH下
 
 修改compiler/plugin.pb.go的 import google_protobuf "google/protobuf"
-为 import google_protobuf "github.com/davyxu/pbmeta/proto"
+为 import google_protobuf "github.com/bobwong89757/pbmeta/proto"
 
 * Windows 运行方法 proto/GenerateProto.bat
 
