@@ -16,7 +16,7 @@ func (self *MessageSet) parse(parentDef interface{}, msgArray []*pbprotos.Descri
 
 	fieldNumber, err := getFieldNumber(parentDef, fieldName)
 	if err != nil {
-		log.Errorln(err)
+		log.Error("%s",err)
 		return
 	}
 
@@ -56,7 +56,7 @@ func (self *MessageSet) MessageByName(name string) *Descriptor {
 func (self *MessageSet) DebugPrint() {
 
 	for _, v := range self.msgMap {
-		log.Debugf("%s", v.Name())
+		log.Debug("%s", v.Name())
 	}
 }
 

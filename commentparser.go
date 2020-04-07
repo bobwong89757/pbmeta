@@ -29,7 +29,7 @@ func (self *CommentParser) Run(src string, commentArray []*TaggedComment) (ret [
 
 	defer golexer.ErrorCatcher(func(err error) {
 
-		log.Errorln(err, self.TokenID(), self.TokenValue())
+		log.Error(err.Error(), self.TokenID(), self.TokenValue())
 
 		ret = commentArray
 

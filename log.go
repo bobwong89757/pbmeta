@@ -1,7 +1,7 @@
 package pbmeta
 
 import (
-	"github.com/bobwong89757/golog"
+	"github.com/bobwong89757/golog/logs"
 )
 
-var log *golog.Logger = golog.New("pbmeta")
+var log = logs.GetBeeLogger()

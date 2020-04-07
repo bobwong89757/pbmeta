@@ -26,7 +26,7 @@ func (self *EnumDescriptor) parse(fd *FileDescriptor) {
 	// 取描述定义中的序号
 	fieldNumber, err := getFieldNumber(self.Define, "Value")
 	if err != nil {
-		log.Errorln(err)
+		log.Error(err.Error())
 		return
 	}
 

@@ -16,7 +16,7 @@ func (self *EnumSet) parse(parentDef interface{}, enumArray []*pbprotos.EnumDesc
 
 	fieldNumber, err := getFieldNumber(parentDef, "EnumType")
 	if err != nil {
-		log.Errorln(err)
+		log.Error(err.Error())
 		return
 	}
 
